@@ -38,7 +38,8 @@ $data = $req->fetchAll();
 		<a href="#" class="btn btn-primary">Ajouter au panier</a>
 
 	<!-- ajout d'un bouton pour supprimer un outils : -->
-		<a href="./controller/deleteProduct.php?id=<?= $d['id'] ?>" class="btn btn-danger">Supprimer l'outil</a>
+	<!-- Ce bouton renvoi la demande de suppression au fichier deleteProductController.php qui va réaliser la suppression : -->
+		<a href="./controller/deleteProductController.php?id=<?= $v['id'] ?>" class="btn btn-danger">Supprimer l'outil</a>
 
 	</div>
 </div>
