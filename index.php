@@ -41,6 +41,10 @@ $data = $req->fetchAll();
 	<!-- Ce bouton renvoi la demande de suppression au fichier deleteProductController.php qui va réaliser la suppression : -->
 		<a href="./controller/deleteProductController.php?id=<?= $v['id'] ?>" class="btn btn-danger">Supprimer l'outil</a>
 
+	<!-- ajout d'un bouton pour modifier un outils : -->
+	<!-- Ce bouton renvoi la demande de modification au fichier updateProduct.php qui va présenter le formulaire : -->
+		<a href="updateProduct.php?id=<?= $v['id'] ?>" class="btn btn-primary">Mettre à jour l'outil</a>
+
 	</div>
 </div>
 
