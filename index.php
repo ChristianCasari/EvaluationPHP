@@ -24,7 +24,11 @@ $data = $req->fetchAll();
 		La <b>perceuse à percussion</b> permet de percer dans divers matériaux tels que le bois, le métal et même la brique, idéale tous vos travaux de perçage exigeants.
 	</p>
 	<p class="more"><a>Voir plus</a> ></p>
+		
+	<!-- ajout d'un bouton pour ajouter un outils : -->
+	<!-- Ce bouton renvoi la demande d'ajout au fichier addProductController.php qui va présenter le formulaire : -->
 	<a href="./addProduct.php" class="btn btn-primary">Créer un produit</a><br/>
+	
 </div>
 <div class="d-flex flex-row ">
 <?php foreach ($data as $k=>$v):
