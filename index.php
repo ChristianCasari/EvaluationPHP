@@ -1,10 +1,15 @@
 <?php
 require_once('Views/header.php');
+//liaison aevc le fichier connect.php où se trouent les éléments nécessaire à la connexion avec la table tools
 include './controller/connect.php';
-$req= $db->prepare('SELECT * FROM tools ');
+
+$req= $db->prepare('SELECT * FROM tools');
 $req->execute(array());
 $data = $req->fetchAll();
+// var_dump($data); Pour vérifier le bon accès et la récupérartion de la base de données tools = OK.
 ?>
+
+
 <div id="description">
 	<h1>Perceuse visseuse</h1>
 	<p>
@@ -19,6 +24,7 @@ $data = $req->fetchAll();
 		La <b>perceuse à percussion</b> permet de percer dans divers matériaux tels que le bois, le métal et même la brique, idéale tous vos travaux de perçage exigeants.
 	</p>
 	<p class="more"><a>Voir plus</a> ></p>
+	<a href="./addProduct.php" class="btn btn-primary">Créer un produit</a><br/>
 </div>
 <div class="d-flex flex-row ">
 <?php foreach ($data as $k=>$v):
@@ -26,9 +32,13 @@ $data = $req->fetchAll();
 <div class="card ms-2" style="width: 18rem;">
 	<img src="" class="card-img-top" alt="...">
 	<div class="card-body">
-		<h5 class="card-title"><?= $v["name"]?></h5>
-		<p class="card-text"><?= $v["description"]?></p>
+		<h5 class="card-title"><?= $v['name']?></h5>
+		<p class="card-text"><?= $v['description']?></p>
+		<p> Prix TTC : <?=$v['price']?> €</p>
 		<a href="#" class="btn btn-primary">Ajouter au panier</a>
+
+	<!-- ajout d'un bouton pour supprimer un outils : -->
+		<a href="./controller/deleteProduct.php?id=<?= $d['id'] ?>" class="btn btn-danger">Supprimer l'outil</a>
 
 	</div>
 </div>
