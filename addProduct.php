@@ -6,10 +6,9 @@ require_once ('Views/header.php');
 <form action="./controller/addProductController.php" method="post">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Outils</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
-
-   
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name"> 
   </div>
+
   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">description</label>
     <input type="text" class="form-control" id="exampleInputPassword1" name="description">
@@ -19,7 +18,12 @@ require_once ('Views/header.php');
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Prix TTC</label>
     <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price">
+  </div>
 
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Accès à l'image</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="image">
+  </div>
 
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>

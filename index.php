@@ -34,7 +34,7 @@ $data = $req->fetchAll();
 <?php foreach ($data as $k=>$v):
 ?>
 <div class="card ms-2" style="width: 18rem;">
-	<img src="" class="card-img-top" alt="...">
+	<img src="<?= $v['image']?>" class="card-img-top" alt="...">
 	<div class="card-body">
 		<h5 class="card-title"><?= $v['name']?></h5>
 		<p class="card-text"><?= $v['description']?></p>
