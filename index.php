@@ -47,7 +47,7 @@ $data = $req->fetchAll();
 
 	<!-- ajout d'un bouton pour modifier un outils : -->
 	<!-- Ce bouton renvoi la demande de modification au fichier updateProduct.php qui va présenter le formulaire : -->
-		<a href="updateProduct.php?id=<?= $v['id'] ?>" class="btn btn-primary">Mettre à jour l'outil</a>
+		<a href="./updateProduct.php?id=<?= $v['id'] ?>" class="btn btn-primary">Mettre à jour l'outil</a>
 
 	</div>
 </div>

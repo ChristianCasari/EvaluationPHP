@@ -31,6 +31,11 @@ $data= $req->fetchAll();
   <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price" value=<?=$data[0]["price"]?> >
 </div>
 
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Accès à l'image</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="image" value=<?=$data[0]["image"]?> >
+  </div>
+
 <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 

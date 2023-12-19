@@ -12,6 +12,8 @@ $req->execute(array(
     "name"=>htmlspecialchars($_POST['name']),
     "description"=>htmlspecialchars($_POST['description']),
     "price"=>htmlspecialchars(intval($_POST['price'])),
+
+    /* Ajout du paramètre image (colonne supplémentaire dans la table avec l'accès pour chaque image) */
     "image"=>htmlspecialchars($_POST['image'])
 ));
 
