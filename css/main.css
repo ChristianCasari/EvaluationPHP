@@ -21,6 +21,7 @@
 
 .card-body {
     text-align: center;
+    justify-content: center;
     padding: 30px;
 }
 
@@ -40,8 +41,5 @@
 #btn {
     display: flex;
     flex-flow: column;
-    padding: 5px;
-    width: 200px;
-
 }
 
