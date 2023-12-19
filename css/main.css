@@ -1,3 +1,47 @@
 .no-underline{
     text-decoration: none;
 }
+
+.dflex{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 15px;
+}
+
+.card {
+    width: 30%; 
+    align-items: center;
+    margin: 3px;
+}
+
+.card-img-top {
+    width: auto; 
+    padding-top: 10px;
+}
+
+.card-body {
+    text-align: center;
+    padding: 30px;
+}
+
+#description {
+    margin-left: 15px;
+    padding-left: 15px;
+
+}
+
+#btCreat {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px ; 
+    width: 90%;
+}
+
+#btn {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    width: 200px;
+
+}
+

@@ -24,5 +24,5 @@ $req->execute(array(
 
 header('Location:../index.php');
 
-/* Super tout fonctionne : ouf !
+/* Super tout fonctionne : ouf ! 9h30
 */
