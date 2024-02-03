@@ -19,7 +19,7 @@ require_once ('Views/header.php');
     <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price">
   </div>
 
-  <!-- Ajout du paramètre image (colonne supplémentaire dans la table avec l'accès pour chaque image) -->
+  <!--Ajout du paramètre image (colonne supplémentaire dans la table avec l'accès pour chaque image)-->
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Accès à l'image</label>
     <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="image">
