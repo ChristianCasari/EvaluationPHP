@@ -1,6 +1,6 @@
 <?php
 require_once('Views/header.php');
-//liaison aevc le fichier connect.php où se trouent les éléments nécessaire à la connexion avec la table tools
+//liaison avec le fichier connect.php où se trouent les éléments nécessaire à la connexion avec la table tools
 include './controller/connect.php';
 
 $req= $db->prepare('SELECT * FROM tools');
